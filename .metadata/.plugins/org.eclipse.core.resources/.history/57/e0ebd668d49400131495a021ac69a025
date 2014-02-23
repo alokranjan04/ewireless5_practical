@@ -1,0 +1,54 @@
+package com.example.helloemfsensor;
+
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Context;
+import android.view.Menu;
+import android.widget.TextView;
+
+public class MainActivity extends Activity implements SensorEventListener{
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        //Find view from layout file
+        mag_x = (TextView)findViewById(R.id.Xaxis);
+        mag_y = (TextView)findViewById(R.id.Yaxis);
+        mag_z = (TextView)findViewById(R.id.Zaxis);
+        mag_h = (TextView)findViewById(R.id.magnetic_field);
+        
+        mSensorManager = (SensorManager)getSystemService(Context.SEARCH_SERVICE);
+        //Get an instance of SensorManager for accessing sensors
+        mMagneticField = mSensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
+        //Determine a default sensor type, in this case is magnetometer
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    
+    private SensorManager mSensorManager;
+    //get access to sensors
+    private Sensor mMagneticField;
+    //represent a sensor
+    
+    @Override
+    public void onSensorChanged(SensorEvent event){
+    	
+    }
+    
+    public void onAccuracyChanged(Sensor sensor, int accuracy){
+    	
+    }
+    
+    
+}

@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   	android:orientation="vertical"
+   	tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/Xaxis"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15pt" />
+    
+    <TextView
+        android:id="@+id/Yaxis"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15pt" />
+    
+    <TextView
+        android:id="@+id/Zaxis"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15pt" />
+    
+    <TextView
+        android:id="@+id/magnetic_field"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15pt" />
+
+</LinearLayout>
