@@ -1,0 +1,92 @@
+package com.example.compass;
+
+import com.example.helloemfsensor.R;
+
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.TextView;
+
+public class MainActivity extends Activity implements SensorEventListener{
+
+	TextView tv;
+    private SensorManager sm;
+    
+    //we need two sensors in this application
+    private Sensor aSensor;
+    private Sensor mSensor;
+    
+    float[] accelerometerValues = new float[3];
+    float[] magneticFieldValues = new float[3];
+    
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        //user defined methods
+        initialization();
+        calculateOrientation();
+    }
+
+
+    private void calculateOrientation() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	private void initialization() {
+		tv = (TextView)findViewById(R.id.);
+		
+	}
+
+
+	@Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+
+	
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+	}
+
+
+	
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+	}
+
+
+	@Override
+	public void onAccuracyChanged(Sensor arg0, int arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void onSensorChanged(SensorEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+	
+    
+    
+}
