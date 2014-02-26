@@ -1,1 +1,4 @@
 1393193271526	Rename field 'textView1'
+1393412633634	Extracts string 'null' into R.string.degree
+1393413452137	Rename field 'mSensorManager'
+1393413517730	Rename field 'mMagneticField'
