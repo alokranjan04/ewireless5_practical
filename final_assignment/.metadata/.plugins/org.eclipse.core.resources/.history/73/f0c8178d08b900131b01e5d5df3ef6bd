@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   	android:orientation="vertical"
+   	tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/Xaxis"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15pt" />
+    
+    <TextView
+        android:id="@+id/Yaxis"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15pt" />
+    
+    <TextView
+        android:id="@+id/Zaxis"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15pt" />
+    
+    <TextView
+        android:id="@+id/magnetic_field"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15pt" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="TakePhoto"
+        android:text="@string/button_send" />
+    
+     <TextView
+        android:id="@+id/lat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15pt"
+        android:text="@string/latitude" />
+
+    <TextView
+        android:id="@+id/textLat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15pt" />
+
+    <TextView
+        android:id="@+id/lon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15pt"
+        android:text="@string/longitude" />
+
+    <TextView
+        android:id="@+id/textLong"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15pt" />
+
+</LinearLayout>
+

@@ -1,6 +1,8 @@
 package com.example.hellocamera;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -61,6 +63,7 @@ public class MainActivity extends Activity {
 				//Image capture failed, advise user
 			}
 		}
+	}
 		
 	private static File getOutputMediaFile(int type){
 		final File mediaStorageDir;
